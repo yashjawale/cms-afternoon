@@ -36,7 +36,7 @@ class Article
         $conn = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
         $sql = "SELECT *, UNIX_TIMESTAMP(publicationDate) AS publicationDate FROM articles WHERE id = :id";
         $st = $conn->prepare($sql);
-        $st->bindValue(":id", $id, PDO:PARAM_INT);
+        $st->bindValue(":id", $id, PDO::PARAM_INT);
         $st->execute();
         $row = $st->fetch();
         $conn = null;

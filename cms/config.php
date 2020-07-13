@@ -1,7 +1,7 @@
 <?php
 ini_set( "display_errors", true );
 date_default_timezone_set( "Asia/Kolkata" );
-define("DB_DSN", "mysql:host=localhost;dbname=cms");
+define("DB_DSN", "mysql:host=localhost:3308;dbname=cms");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "sairam9423001766");
 define("CLASS_PATH", "classes");

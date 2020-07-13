@@ -97,7 +97,7 @@ switch ( $action ) {
           header("Location: admin.php");
 
       } else {
-          $results['article'] = Article::getById((int)$_GET['articleId'])
+          $results['article'] = Article::getById((int)$_GET['articleId']);
           require(TEMPLATE_PATH . "/admin/editArticle.php");
       }
 

@@ -18,7 +18,7 @@ function archive() {
     $results = array();
     $data = Article::getList();
     $results['articles'] = $data['results'];
-    $results['totalRows'] = $data['totelRows'];
+    $results['totalRows'] = $data['totalRows'];
     $results['pageTitle'] = "Article Archive | Widget News";
     require(TEMPLATE_PATH . "/archive.php");
 }
